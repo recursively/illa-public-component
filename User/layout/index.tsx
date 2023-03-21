@@ -26,7 +26,7 @@ export const UserLayout: FC<LayoutProps> = ({ children }) => {
       </aside> */}
       <aside css={rightAsideWrapperStyle}>
         {children}
-        <span css={policyStyle}>
+        {/* <span css={policyStyle}>
           <Trans
             i18nKey="page.user.policy"
             t={t}
@@ -41,7 +41,7 @@ export const UserLayout: FC<LayoutProps> = ({ children }) => {
               />,
             ]}
           />
-        </span>
+        </span> */}
       </aside>
     </div>
   )

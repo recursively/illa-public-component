@@ -31,13 +31,13 @@ const Login: FC<LoginProps> = (props) => {
     <form css={gridFormStyle} onSubmit={handleSubmit(onSubmit)}>
       <header css={gridItemStyle}>
         <div css={formTitleStyle}>{t("page.user.sign_in.title")}</div>
-        <div css={descriptionStyle}>
+        {/* <div css={descriptionStyle}>
           <Trans
             i18nKey="page.user.sign_in.description.register"
             t={t}
             components={[<TextLink key="text-link" onClick={toRegister} />]}
           />
-        </div>
+        </div> */}
       </header>
       <section css={gridFormFieldStyle}>
         <section css={gridItemStyle}>
@@ -85,9 +85,9 @@ const Login: FC<LoginProps> = (props) => {
             <label css={formLabelStyle}>
               {t("page.user.sign_in.fields.password")}
             </label>
-            <TextLink css={forgotPwdStyle} onClick={toForgotPassword}>
+            {/* <TextLink css={forgotPwdStyle} onClick={toForgotPassword}>
               {t("page.user.sign_in.description.forgot_password")}
-            </TextLink>
+            </TextLink> */}
           </div>
           <div css={gridValidStyle}>
             <Controller
