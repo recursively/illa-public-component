@@ -19,11 +19,11 @@ export const UserLayout: FC<LayoutProps> = ({ children }) => {
 
   return (
     <div css={layoutWrapperStyle}>
-      <aside css={leftAsideWrapperStyle}>
+      {/* <aside css={leftAsideWrapperStyle}>
         <ILLALogoWhite css={illaLogoStyle} />
         <span css={sloganStyle}>{t("page.user.description")}</span>
         <section css={sectionBackgroundStyle} />
-      </aside>
+      </aside> */}
       <aside css={rightAsideWrapperStyle}>
         {children}
         <span css={policyStyle}>
